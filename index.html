@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6f2;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden; /* Prevents confetti from scrolling out of view */
+        }
+        h1 {
+            margin: 20px;
+            font-size: 6em;
+        }
+        .flowers {
+            margin-top: 100px;
+            max-width: 100%;
+            height: auto;
+            max-height: 1000px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ff69b4; /* Pink color, can vary */
+            animation: fall linear infinite;
+            top: -10px; /* Start above the screen */
+        }
+        .confetti:nth-child(odd) {
+            background-color: #ffb6c1; /* Lighter pink for variety */
+        }
+        .confetti:nth-child(3n) {
+            background-color: #ff1493; /* Deeper pink */
+        }
+        .confetti:nth-child(5n) {
+            background-color: #dc143c; /* Crimson for more variety */
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(-10px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        /* Generate multiple confetti with different delays and positions */
+        .confetti:nth-child(1) { left: 10%; animation-duration: 5s; animation-delay: 0s; }
+        .confetti:nth-child(2) { left: 20%; animation-duration: 6s; animation-delay: 1s; }
+        .confetti:nth-child(3) { left: 30%; animation-duration: 4s; animation-delay: 2s; }
+        .confetti:nth-child(4) { left: 40%; animation-duration: 7s; animation-delay: 0.5s; }
+        .confetti:nth-child(5) { left: 50%; animation-duration: 5.5s; animation-delay: 1.5s; }
+        .confetti:nth-child(6) { left: 60%; animation-duration: 6.5s; animation-delay: 2.5s; }
+        .confetti:nth-child(7) { left: 70%; animation-duration: 4.5s; animation-delay: 0.8s; }
+        .confetti:nth-child(8) { left: 80%; animation-duration: 8s; animation-delay: 1.2s; }
+        .confetti:nth-child(9) { left: 90%; animation-duration: 5.2s; animation-delay: 2.8s; }
+        .confetti:nth-child(10) { left: 15%; animation-duration: 6.8s; animation-delay: 0.3s; }
+        .confetti:nth-child(11) { left: 25%; animation-duration: 4.8s; animation-delay: 1.8s; }
+        .confetti:nth-child(12) { left: 35%; animation-duration: 7.2s; animation-delay: 2.2s; }
+        .confetti:nth-child(13) { left: 45%; animation-duration: 5.8s; animation-delay: 0.7s; }
+        .confetti:nth-child(14) { left: 55%; animation-duration: 6.2s; animation-delay: 1.9s; }
+        .confetti:nth-child(15) { left: 65%; animation-duration: 4.2s; animation-delay: 2.6s; }
+        .confetti:nth-child(16) { left: 75%; animation-duration: 7.5s; animation-delay: 0.9s; }
+        .confetti:nth-child(17) { left: 85%; animation-duration: 5.4s; animation-delay: 1.4s; }
+        .confetti:nth-child(18) { left: 5%; animation-duration: 6.6s; animation-delay: 2.1s; }
+        .confetti:nth-child(19) { left: 95%; animation-duration: 4.9s; animation-delay: 0.6s; }
+        .confetti:nth-child(20) { left: 50%; animation-duration: 7.8s; animation-delay: 1.7s; }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            .flowers {
+                margin-top: 50px;
+                max-height: 1000px;
+            }
+            .confetti {
+                width: 8px;
+                height: 8px; /* Smaller confetti on mobile for better performance */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Valentine's Day!</h1>
+    <img src="/flower/Bouquet.png" alt="Bouquet of Flowers" class="flowers">
+    <!-- Falling Confetti Elements -->
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+</body>
+</html>
