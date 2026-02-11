@@ -15,7 +15,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            overflow: hidden; /* Prevents confetti from scrolling out of view */
+            overflow: hidden; 
         }
         h1 {
             margin: 20px;
@@ -29,23 +29,24 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            animation: float 3s ease-in-out infinite;
         }
         .confetti {
             position: absolute;
             width: 10px;
             height: 10px;
-            background-color: #ff69b4; /* Pink color, can vary */
+            background-color: #ff69b4; 
             animation: fall linear infinite;
-            top: -10px; /* Start above the screen */
+            top: -10px; 
         }
         .confetti:nth-child(odd) {
-            background-color: #ffb6c1; /* Lighter pink for variety */
+            background-color: #ffb6c1; 
         }
         .confetti:nth-child(3n) {
-            background-color: #ff1493; /* Deeper pink */
+            background-color: #ff1493; 
         }
         .confetti:nth-child(5n) {
-            background-color: #dc143c; /* Crimson for more variety */
+            background-color: #dc143c; 
         }
         @keyframes fall {
             0% {
@@ -57,7 +58,7 @@
                 opacity: 0;
             }
         }
-        /* Generate multiple confetti with different delays and positions */
+        
         .confetti:nth-child(1) { left: 10%; animation-duration: 5s; animation-delay: 0s; }
         .confetti:nth-child(2) { left: 20%; animation-duration: 6s; animation-delay: 1s; }
         .confetti:nth-child(3) { left: 30%; animation-duration: 4s; animation-delay: 2s; }
@@ -85,10 +86,11 @@
             .flowers {
                 margin-top: 50px;
                 max-height: 1000px;
+                animation: float 3s ease-in-out infinite; 
             }
             .confetti {
                 width: 8px;
-                height: 8px; /* Smaller confetti on mobile for better performance */
+                height: 8px; 
             }
         }
     </style>
